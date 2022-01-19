@@ -8,6 +8,7 @@
 
 ## Deployment and hosting
 - Back-end / Front-end on Heroku
+- Monolithic Architecture
 
 ## Visit this project on the website:
 https://mysqltraining.herokuapp.com
