@@ -1,10 +1,10 @@
 <div id="book-page">
-  <a href="/books">Voltar</a>
+  <a href="/books">Back</a>
   <div class="container">
     <h1>{{bookind.title}}</h1>
-    <p>Este livro tem {{bookind.pageqty}} páginas.</p>
+    <p>This book has {{bookind.pageqty}} pages.</p>
     <div class="actions">
-      <a href="/books/edit/{{bookind.id}}">Editar</a>
+      <a href="/books/edit/{{bookind.id}}">Edit</a>
       <form action="/books/remove/{{bookind.id}}" method="post">
         <input type="submit" value="Remover">
       </form>

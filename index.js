@@ -25,8 +25,8 @@ app.post('/books/insertbook', (req, res) => {
   const title = req.body.title
   const pageqty = req.body.pageqty
 
-  const sqlbd = `INSERT INTO books (??, ??) VALUES (?, ?)` //substituir (coluna 2 ??, linha)
-  const data = ['title', 'pageqty', title, pageqty] //substituir o item (title, pageqty) com as variáveis (title, pageqty)
+  const sqlbd = `INSERT INTO books (??, ??) VALUES (?, ?)` 
+  const data = ['title', 'pageqty', title, pageqty] (title, pageqty)
 
   pool.query(sqlbd, data, function (err) {
     if (err) {
@@ -52,7 +52,6 @@ app.get('/books', (req, res) => {
   })
 })
 
-//READ - rota buscar livros individualmente (get) - WHERE - SQL
 app.get('/books/:id', (req, res) => {
 
   const id = req.params.id
